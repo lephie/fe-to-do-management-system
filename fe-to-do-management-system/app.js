@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(logger('dev'));
@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
 });
 
 // Set port
-const port = process.env.PORT || 4000;
+const port = process.env.APP_PORT || 4000;
 
 // Start server
 app.listen(port, () => {
